@@ -1,0 +1,37 @@
+<style id="d-dialog-stylesheet">
+d-dialog d-bg{
+    background:rgba(0,0,0,0.4);
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:10000;
+}
+d-dialog d-bg d-window{
+    background:#282828;
+    box-shadow: 0 0 4px 0 #aaa;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translateX(-50%) translateY(-50%);
+    display:table;
+}
+d-dialog d-bg d-window d-content,
+d-dialog d-bg d-window d-header,
+d-dialog d-bg d-window d-footer{
+    display:table-row;
+}
+d-dialog d-bg d-window d-td{
+    display:table-cell;
+    padding:10px 15px;
+    position:relative;
+}
+d-dialog d-bg d-window d-header d-td,
+d-dialog d-bg d-window d-footer d-td{
+    height:30px;
+}
+d-dialog d-bg d-window d-header d-td{
+    font-weight:bold;
+}
+</style>
